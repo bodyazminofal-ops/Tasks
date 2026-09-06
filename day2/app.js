@@ -9,6 +9,7 @@ const btn = document.querySelector("#shopBtn");
 const content = document.querySelector(".products-content");
 
 btn.addEventListener("click", () => {
+  content.innerHTML = "";
   fetch("https://api.jsoning.com/mock/ijh9msyqyd/products")
     .then((res) => {
       return res.json();
